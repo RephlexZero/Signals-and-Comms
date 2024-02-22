@@ -51,11 +51,6 @@ for i = 1:N
     modulation(i)=E0+Em*cos(modulation_w*time(i)+modulation_phase)+Em2*cos(modulation_w2*time(i)+modulation_phase2)+Em3*cos(modulation_w3*time(i)+modulation_phase3);
     AM_time(i)=modulation(i)*carrier(i)/Conv_Loss;
 end;
-R = 50; % ohms
-AM_Power = AM_time.^2/R;
-PEP = max(AM_Power)/2 % divide by 2 because of root mean square
-PAPR = PEP/mean(AM_Power)
-
 % FFT to find frequency response
 AM_freq=fft(AM_time,N);
 AM_mag_freq=zeros(1,N,'double');
@@ -85,9 +80,9 @@ plot(time,AM_time)
 plot(time,modulation)
 legend('AM signal','Modulation')
 % Remove comment to add 'envelopes' of the signal
-%plot(time,2.0*modulation)
-%plot(time,-2.0*modulation)
-%legend('AM signal','Modulation','Envelope','- Envelope')
+% plot(time,2.0*modulation)
+% plot(time,-2.0*modulation)
+% legend('AM signal','Modulation','Envelope','- Envelope')
 hold off;
 %
 figure(3);
@@ -101,5 +96,4 @@ ylabel('|Voltage|')
 stem(freq,AM_mag_freq)
 legend('AM')
 hold off;
-
 

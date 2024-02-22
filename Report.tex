@@ -12,7 +12,7 @@
 \pagestyle{fancy}
 \fancyhf{}
 \rhead{Jake Stewart and Eugene Levinson}
-\lhead{}
+\lhead{Modulation Waveforms Lab Report EE20017}
 \rfoot{Page \thepage}
 
 % Document
@@ -32,22 +32,25 @@
         
         \vspace{1.5cm}
 
-        \textbf{Your Name}\\
-        \textbf{Student ID}
+        \textbf{Jake Stewart}\\
+        \textbf{JS3910}\\
+
+        \textbf{Eugene Levinson}\\
+        \textbf{EL769}\\
 
         \vfill
         
         A report presented for\\
-        The Course Name
+        Communication Principles EE20017\\
 
         \vspace{0.8cm}
 
         %\includegraphics[width=0.4\textwidth]{university_logo.png}
         
         \Large
-        Department Name\\
-        University Name\\
-        Country\\
+        Electrical and Electronic Engineering\\
+        University of Bath\\
+        United Kingdom\\
         \today
 
     \end{center}
@@ -59,6 +62,14 @@
 
 \section{Introduction}
 Introduce the topic of your report and provide background information.
+\section{Matlab Code}
+
+\begin{verbatim}
+    R = 50; % ohms
+    AM_Power = AM_time.^2/R;
+    PEP = max(AM_Power)/2 % divide by 2 because of root mean square
+    PAPR = PEP/mean(AM_Power)
+\end{verbatim}
 
 \section{Theory}
 Discuss the theoretical background of the experiments you conducted.
