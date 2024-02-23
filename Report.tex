@@ -1,4 +1,4 @@
-\documentclass[15pt,a4paper]{article}
+\documentclass[a4paper]{article}
 
 % Packages
 \usepackage[utf8]{inputenc}
@@ -9,11 +9,41 @@
 \usepackage{amssymb}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \usepackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhf{}
-\rhead{Jake Stewart and Eugene Levinson}
-\lhead{Modulation Waveforms Lab Report EE20017}
-\rfoot{Page \thepage}
+\usepackage{glossaries}
+\usepackage{listings}
+\usepackage{xcolor} % Extended color functionalities
+
+% Define custom colors
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+% MATLAB style for highlighting
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+% Glossary entries
+\newacronym{pep}{PEP}{Peak Envelope Power}
+\newacronym{papr}{PAPR}{Peak to Average Power Ratio}
 
 % Document
 \begin{document}
@@ -36,13 +66,6 @@
         \textbf{JS3910}\\
 
         \textbf{Eugene Levinson}\\
-        \textbf{EL769}\\
-
-        \vfill
-        
-        A report presented for\\
-        Communication Principles EE20017\\
-
         \vspace{0.8cm}
 
         %\includegraphics[width=0.4\textwidth]{university_logo.png}
@@ -62,29 +85,36 @@
 
 \section{Introduction}
 Introduce the topic of your report and provide background information.
-\section{Matlab Code}
 
-\begin{verbatim}
-    R = 50; % ohms
-    AM_Power = AM_time.^2/R;
-    PEP = max(AM_Power)/2 % divide by 2 because of root mean square
+\section{Modulation Tests}
+A square wave and triangle wave were generated and modulated using an AM modulator.
+The modulated waveforms were then observed in MATLAB where the \gls{pep} and \gls{papr} were derived with the following code:
+
+\begin{lstlisting}[language=Matlab]
+    % AM Power
+    R = 50; % Ohms
+    AM_Power = (AM_time.^2) / R; % Power in Watts V^2/R
+    % Peak Envelope Power
+    PEP = max(AM_Power)/2 % Divided by 2 to get the RMS value
+    % Peak to Average Power Ratio
     PAPR = PEP/mean(AM_Power)
-\end{verbatim}
+\end{lstlisting}
 
-\section{Theory}
-Discuss the theoretical background of the experiments you conducted.
+\subsection{Results for Square Wave}
 
-\section{Methodology}
-Explain the methods used in your experiments.
+\begin{itemize}
+    \item \gls{pep}: [insert PEP value for square wave]
+    \item \gls{papr}: [insert PAPR value for square wave]
+\end{itemize}
 
-\section{Results}
-Present the results of your experiments.
+\subsection{Results for Triangular Wave}
 
-\section{Discussion}
-Discuss the significance of your results.
+\begin{itemize}
+    \item \gls{pep}: [insert PEP value for triangular wave]
+    \item \gls{papr}: [insert PAPR value for triangular wave]
+\end{itemize}
 
 \section{Conclusion}
 Conclude the report by summarizing the findings and their implications.
-
 
 \end{document}

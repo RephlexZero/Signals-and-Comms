@@ -51,6 +51,15 @@ for i = 1:N
     modulation(i)=E0+Em*cos(modulation_w*time(i)+modulation_phase)+Em2*cos(modulation_w2*time(i)+modulation_phase2)+Em3*cos(modulation_w3*time(i)+modulation_phase3);
     AM_time(i)=modulation(i)*carrier(i)/Conv_Loss;
 end;
+
+% AM Power
+R = 50; % Ohms
+AM_Power = (AM_time.^2) / R; % Power in Watts V^2/R
+% Peak Envelope Power
+PEP = max(AM_Power)/2 % Divided by 2 to get the RMS value
+% Peak to Average Power Ratio
+PAPR = PEP/mean(AM_Power)
+
 % FFT to find frequency response
 AM_freq=fft(AM_time,N);
 AM_mag_freq=zeros(1,N,'double');
