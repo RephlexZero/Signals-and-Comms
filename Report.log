@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.2.22)  23 FEB 2024 00:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.2.22)  23 FEB 2024 00:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -509,9 +509,14 @@ Package hyperref Info: Link coloring OFF on input line 49.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count328
+<university_logo.png, id=24, 687.56876pt x 230.8625pt>
+File: university_logo.png Graphic file (type png)
+<use university_logo.png>
+Package pdftex.def Info: university_logo.png  used on input line 73.
+(pdftex.def)             Requested size: 193.47578pt x 64.96161pt.
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Report.toc
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./university_logo.png>] (./Report.toc
 LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -527,7 +532,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.84 \newpage
+l.87 \newpage
               [1] (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 ) [2] (./Report.aux)
@@ -535,10 +540,10 @@ Package rerunfilecheck Info: File `Report.out' has not changed.
 (rerunfilecheck)             Checksum: 914B6686A6B23F9E8736013C6E2FB0BF;704.
  ) 
 Here is how much of TeX's memory you used:
- 17139 strings out of 477985
- 261796 string characters out of 5840058
+ 17147 strings out of 477985
+ 261964 string characters out of 5840058
  1913388 words of memory out of 5000000
- 37073 multiletter control sequences out of 15000+600000
+ 37079 multiletter control sequences out of 15000+600000
  517686 words of font info for 53 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  94i,5n,90p,2301b,1765s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -549,10 +554,10 @@ pdfTeX warning (dest): name{glo:papr} has been referenced but does not exist, re
 pdfTeX warning (dest): name{glo:pep} has been referenced but does not exist, replaced by a fixed one
 
  </home/jake/.texlive/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on Report.pdf (3 pages, 94594 bytes).
+Output written on Report.pdf (3 pages, 101662 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
- 87 compressed objects within 1 object stream
+ 111 PDF objects out of 1000 (max. 8388607)
+ 88 compressed objects within 1 object stream
  19 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
