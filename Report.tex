@@ -13,6 +13,8 @@
 \usepackage{listings}
 \usepackage{xcolor} % Extended color functionalities
 
+\hypersetup{colorlinks=true, linkcolor=blue}
+
 % Define custom colors
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
@@ -103,18 +105,26 @@ The modulated waveforms were then observed in MATLAB where the \gls{pep} and \gl
     PAPR = PEP/mean(AM_Power)
 \end{lstlisting}
 
-\subsection{Results for Square Wave}
-
+\subsection{Results}
+\subsection*{Square Wave}
 \begin{itemize}
-    \item \gls{pep}: [insert PEP value for square wave]
-    \item \gls{papr}: [insert PAPR value for square wave]
+    \item \gls{pep}: 134.5mW
+    \item \gls{papr}: 2.37
 \end{itemize}
 
-\subsection{Results for Triangular Wave}
-
+\subsection*{Triangular Wave}
 \begin{itemize}
-    \item \gls{pep}: [insert PEP value for triangular wave]
-    \item \gls{papr}: [insert PAPR value for triangular wave]
+    \item \gls{pep}: 369.6mW
+    \item \gls{papr}: 4.07
+\end{itemize}
+
+\section{Demodulation/detection}
+
+\subsection{AM detection}
+\subsection*{Square Wave}
+\begin{itemize}
+    \item \gls{pep}: 575.7mW
+    \item \gls{papr}: 8.22
 \end{itemize}
 
 \section{Conclusion}

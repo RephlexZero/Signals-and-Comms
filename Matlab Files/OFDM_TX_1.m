@@ -73,6 +73,11 @@ end;
 
 TXsignal_spectrum=fft(TXsignal_tot)/N;
 
+R = 50; % ohms
+TXsinal_tot_power = (TXsignal_tot.^2)/R;
+PEP = max(TXsinal_tot_power)
+PAPR = PEP/mean(TXsinal_tot_power)
+
 figure(1);
 hold on;
 grid on;

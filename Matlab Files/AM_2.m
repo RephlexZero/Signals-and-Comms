@@ -1,4 +1,5 @@
-% MatLab script to simulate AM with single frequency modulation 
+% MatLab script to simulate AM with single frequency modulation
+clear all
 mm=12;
 N=2^mm;          % number of points in FFT/IFFT calculations
 df = 2.5;        % frequency spacing of samples for FFT/IFFT
