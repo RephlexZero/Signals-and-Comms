@@ -46,6 +46,7 @@
 % Glossary entries
 \newacronym{pep}{PEP}{Peak Envelope Power}
 \newacronym{papr}{PAPR}{Peak to Average Power Ratio}
+\newacronym{ofdm}{OFDM}{Orthogonal Frequency Division Multiplexing}
 
 % Document
 \begin{document}
@@ -98,9 +99,9 @@ The modulated waveforms were then observed in MATLAB where the \gls{pep} and \gl
 \begin{lstlisting}[language=Matlab]
     % AM Power
     R = 50; % Ohms
-    AM_Power = (AM_time.^2) / R; % Power in Watts V^2/R
+    AM_Power = (AM_time.^2) / (2*R); % RMS Power in Watts V^2/2R
     % Peak Envelope Power
-    PEP = max(AM_Power)/2 % Divided by 2 to get the RMS value
+    PEP = max(AM_Power)
     % Peak to Average Power Ratio
     PAPR = PEP/mean(AM_Power)
 \end{lstlisting}
@@ -109,25 +110,43 @@ The modulated waveforms were then observed in MATLAB where the \gls{pep} and \gl
 \subsection*{Square Wave}
 \begin{itemize}
     \item \gls{pep}: 134.5mW
-    \item \gls{papr}: 2.37
+    \item \gls{papr}: 4.74
 \end{itemize}
 
 \subsection*{Triangular Wave}
 \begin{itemize}
     \item \gls{pep}: 369.6mW
-    \item \gls{papr}: 4.07
+    \item \gls{papr}: 8.14
 \end{itemize}
 
 \section{Demodulation/detection}
 
 \subsection{AM detection}
-\subsection*{Square Wave}
+
+\subsection*{Phase offset in receiver carrier}
+
+\subsection*{Frequency offset in receiver carrier}
+
+\section{Orthogonal Frequency Division Multiplexing (OFDM)}
+\subsection{OFDM Baseband Signal}
+\subsection*{"S" Symbol @ 1V}
 \begin{itemize}
-    \item \gls{pep}: 575.7mW
+    \item \gls{pep}: 287.8mW
     \item \gls{papr}: 8.22
 \end{itemize}
 
-\section{Conclusion}
-Conclude the report by summarizing the findings and their implications.
+\subsection*{"S" Symbol @ 2.5V}
+\begin{itemize}
+    \item \gls{pep}: 1.8W
+    \item \gls{papr}: 8.22
+\end{itemize}
+
+\subsection{64-QAM on OFDM}
+
+\subsection*{}
+\begin{itemize}
+    \item \gls{pep}: 1003W
+    \item \gls{papr}: 6.64
+\end{itemize}
 
 \end{document}

@@ -55,9 +55,9 @@ end;
 
 % AM Power
 R = 50; % Ohms
-AM_Power = (AM_time.^2) / R; % Power in Watts V^2/R
+AM_Power = (AM_time.^2) / (2*R); % RMS Power in Watts V^2/2R
 % Peak Envelope Power
-PEP = max(AM_Power)/2 % Divided by 2 to get the RMS value
+PEP = max(AM_Power)
 % Peak to Average Power Ratio
 PAPR = PEP/mean(AM_Power)
 

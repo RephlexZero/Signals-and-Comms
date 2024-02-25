@@ -23,19 +23,19 @@ BBsignal_time=complex(zeros(1,N,'double'));
 ICarrier_time=zeros(1,N,'double');
 QCarrier_time=zeros(1,N,'double');
 Carrier_omega=2.0*pi*300*df;
-Ec=1.0;
+Ec=12.0;
 for i = 1:N
     ICarrier_time(i)=Ec*cos(Carrier_omega*time(i));   % populate the time samples at spacing dt
     QCarrier_time(i)=Ec*sin(Carrier_omega*time(i));   % populate the time samples at spacing dt
 end;
 
-BBsignal_spectrum(1)=complex(0.0,1.0);
-BBsignal_spectrum(11)=complex(0.0,1.0);
-BBsignal_spectrum(21)=complex(0.0,0.0);
-BBsignal_spectrum(31)=complex(1.0,1.0);
-BBsignal_spectrum(N+no-11)=complex(0.0,1.0);
-BBsignal_spectrum(N+no-21)=complex(0.0,0.0);
-BBsignal_spectrum(N+no-31)=complex(1.0,1.0);
+BBsignal_spectrum(1)=complex(7,-7);
+BBsignal_spectrum(11)=complex(-5,-1);
+BBsignal_spectrum(21)=complex(7,-5);
+BBsignal_spectrum(31)=complex(-1,1);
+BBsignal_spectrum(N+no-11)=complex(-3,1);
+%BBsignal_spectrum(N+no-21)=complex(0.0,0.0);
+%BBsignal_spectrum(N+no-31)=complex(2.5,2.5);
 
 %BBsignal_spectrum(1)=complex(-7.0,3.0);
 % BBsignal_spectrum(11)=complex(3.0,1.0);
@@ -74,7 +74,7 @@ end;
 TXsignal_spectrum=fft(TXsignal_tot)/N;
 
 R = 50; % ohms
-TXsinal_tot_power = (TXsignal_tot.^2)/R;
+TXsinal_tot_power = (TXsignal_tot.^2)/(2*R);
 PEP = max(TXsinal_tot_power)
 PAPR = PEP/mean(TXsinal_tot_power)
 
