@@ -30,15 +30,15 @@ for i = 1:N
 end;
 
 % 64-QAM signal
- BBsignal_spectrum(1)=complex(7,-7); 
- BBsignal_spectrum(11)=complex(-5,-1);
- BBsignal_spectrum(21)=complex(7,-5);
- BBsignal_spectrum(31)=complex(-1,1);
- BBsignal_spectrum(41)=complex(-3,1);
+% BBsignal_spectrum(1)=complex(7,-7); 
+% BBsignal_spectrum(11)=complex(-5,-1);
+% BBsignal_spectrum(21)=complex(7,-5);
+% BBsignal_spectrum(31)=complex(-1,1);
+% BBsignal_spectrum(41)=complex(-3,1);
  BBsignal_spectrum(N+no-11)=complex(-5,-1);
- BBsignal_spectrum(N+no-21)=complex(7,-5);
- BBsignal_spectrum(N+no-31)=complex(-1,1);
- BBsignal_spectrum(N+no-41)=complex(-3,1);
+% BBsignal_spectrum(N+no-21)=complex(7,-5);
+% BBsignal_spectrum(N+no-31)=complex(-1,1);
+% BBsignal_spectrum(N+no-41)=complex(-3,1);
 
 
 %BBsignal_spectrum(1)=complex(-7.0,3.0);
