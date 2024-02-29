@@ -228,7 +228,7 @@ The "AM\_RX\_1.m" was configured according to the modulation table provided in t
 \begin{figure}[htbp]
 \centering
 
-\includegraphics[scale=0.2]{AM_RX_1_outputs_Trinagle.png}
+\includegraphics[scale=0.3]{AM_RX_1_outputs_Trinagle.png}
 \caption{RX output comparison for triangle modulation}
 
 \end{figure}
@@ -238,24 +238,51 @@ The "AM\_RX\_1.m" was configured according to the modulation table provided in t
 
 
 \subsection*{Phase offset in receiver carrier}
+The phase of the receiver carrier signal was changed in increments of $\pi/4$. As the phase changes it can be observed that the amplitudes of the demodulated signal change. Most notably the $o_s$ is offset down up to -6V and $o_R$ peak to peak amplitude is reduced.
+
+
+\begin{figure}[htbp]
+\centering
+
+\includegraphics[scale=0.5]{Output Waveforms + 4pi 4.jpg}
+\caption{Triangle wave demodulated with receiver carrier phase offset to $4\pi$ }
+
+\end{figure}
+
+\noindent These changes appear due to the mismatch in phase of the sender and receiver carrier which results in destructive , reducing and shifting the amplitude.
+
 
 \subsection*{Frequency offset in receiver carrier}
+The modulation and carrier singals' parameters were set as specified in the lab script. When looking at the two demodulated signals, the $o_R$ is demodulated correctly, with no noticeable distortion (Figure 10). However the $o_S$ is heavily effected. This is because $o_S$ relies on the carrier and receiver carrier matching frequencies, since multiplication by the receiver carrier is performed. If the carrier frequency does not match the receiver carrier, then the effects mimic those of adding more modulation with another signal - the wave form changes drastically. On the other hand the rectified output is not effected as it does not rely on a receiver carrier at all.
+
+\begin{figure}[htbp]
+\centering
+
+\includegraphics[scale=0.5]{frequncy change Output Waveforms.jpg}
+\caption{Square wave with mismatched TX and RX frequencies }
+
+\end{figure}
+
 
 \section{Orthogonal Frequency Division Multiplexing (OFDM)}
 \subsection{OFDM Baseband Signal}
+\noindent The parameters in the provided Matlab script were set as per the lab script.
+The following values were calculated:
 \subsection*{"S" Symbol @ 1V}
 \begin{itemize}
-    \item \gls{pep}: 41.44W
-    \item \gls{papr}: 8.22
+    \item ${PEP}$: 41.44W
+    \item ${PAPR}$: 8.22
 \end{itemize}
 
 \subsection*{"S" Symbol @ 2.5V}
 \begin{itemize}
-    \item \gls{pep}: 1.8W
-    \item \gls{papr}: 8.22
+    \item ${PEP}$: 1.8W
+    \item ${PAPR}$fair: 8.22
 \end{itemize}
 
 \subsection{64-QAM on OFDM}
+\noindent Matlab was used to calculate PEP and PAPR for each of the following symbols:\\ 
+
 \begin{tabular}{|l|l|l|}
 \hline
 \textbf{Symbols} & \textbf{PEP} & \textbf{PAPR} \\ \hline
@@ -265,6 +292,10 @@ The "AM\_RX\_1.m" was configured according to the modulation table provided in t
 "<" & 11.4WW & 3.97 \\ \hline
 "3" & 57.4W & 3.98 \\ \hline
 "X+Y<3" & 1372W & 5.92 \\ \hline
-\end{tabular}
+\end{tabular} \\
+
+\subsection{Summary and comments}
+
+\noindent AM signals typically rely on envelope detection methods, which may suffer from noise and distortion. For receiving OFDM signals, coherent detection schemes are more suitable due to their ability to handle the complex multipath environment and mitigate inter symbol interference, making them preferable over envelope detection methods used in AM demodulation.
 
 \end{document}
