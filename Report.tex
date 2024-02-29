@@ -12,6 +12,12 @@
 \usepackage{glossaries}
 \usepackage{listings}
 \usepackage{xcolor} % Extended color functionalities
+\usepackage{graphicx} % Required for inserting images
+\usepackage{tikz}
+\usetikzlibrary{automata, positioning, arrows}
+\usepackage{float}
+\usepackage{subcaption}
+
 
 \hypersetup{colorlinks=true, linkcolor=blue}
 
@@ -90,13 +96,16 @@
 \newpage
 
 \section{Introduction}
-Introduce the topic of your report and provide background information.
+In this report the results of the "Modulation Waveforms" laboratory from the "EE20017 Communication principles module" are presented, discussed and analysed. The goal of the laboratory was to experiment and experience AM modulation and related signal processing using Matlab.
 
 \section{Modulation Tests}
-A square wave and triangle wave were generated and modulated using an AM modulator.
-The modulated waveforms were then observed in MATLAB where the \gls{pep} and \gls{papr} were derived with the following code:
+\noindent A square wave and triangle wave were generated and modulated using the AM\_2.m file provided. To generate the required waveforms as specified in the lab script modulation parameters such as amplitude, frequency and phase were adjusted in the script, to match values specified in the script. Other parameters such as load resistance and loss were checked and adjusted if needed. \\
 
-\begin{lstlisting}[language=Matlab]
+\noindent The script provided generates plots that are a very helpful visualization and can also be used to perform signal analysis and calculations. However since all data is already available through Matlab, all further analysis was done by adding extra calculations steps to the Matlab scripts. \\
+
+\noindent The following code was used to calculate \gls{pep} and \gls{papr}: \\
+
+\begin{lstlisting}[language=Matlab, caption={Signal processing calculations}, label={lst:singnalcalcs}]
     % AM Power
     R = 50; % Ohms
     AM_Power = (AM_time.^2) / (2*R); % RMS Power in Watts V^2/2R
@@ -108,20 +117,125 @@ The modulated waveforms were then observed in MATLAB where the \gls{pep} and \gl
 
 \subsection{Results}
 \subsection*{Square Wave}
+    The carrier signal was modulated with the the waveform approximating a square wave using the provided script and modulation parameters. \\
+    
+    \noindent To calculate the \gls{pep}, formula can be used: $PEP = \frac{(\frac{V_{peak}}{\sqrt{2}})^2}{R}$. Where $V_{peak}$ is the maximum absolute value of the wave's amplitude. This was done in Matlab by running a element wise operation to calculate power for each sample point in the modulated signal and then finding the maximum (see Listing \ref{lst:singnalcalcs}).\\
+    
+    \noindent To calculate the mean power the following equation can be used: $P_{\text{mean}} = \frac{V_c^2}{2R} + \sum_{i=1}^{n} \frac{V_{m_i}^2}{2R}$ \\
+    
+    \noindent Where:
+        \( P_{\text{mean}} \) is the mean power of the AM wave.
+        \( V_c \) is the RMS voltage of the carrier signal.
+        \( V_{m_i} \) is the RMS voltage of each modulation signal.
+        \( R \) is the resistance of the load.
+        \( n \) is the number of modulation frequencies. \\
+        
+    \noindent Finally \gls{papr} can be calculated using : $PAPR = \frac{PEP}{P_{mean}}$ \\
+
+    \noindent The following results were obtained: 
+        
 \begin{itemize}
-    \item \gls{pep}: 134.5mW
-    \item \gls{papr}: 4.74
+    \item $PEP$: 214.7 mW
+    \item $P_{mean}$: 45.4 mW
+    \item $PAPR$: 4.7312
 \end{itemize}
 
+\noindent The following powers (in mW) were observed on the AM spectrum plot: $14.4000$, $3.6000$, $0.3992$, $0.1440$ for $f_c$, $f_{m1}$, $f_{m2}$, $f_{m3}$ respectively (Figure 1). The side bands account for 28.47\% of the power. \\
+
+\noindent No cross over distortion was observed. When inspected the modulated signal appears to be smooth with no apparent distortion. There are no signs of the signal being modulated bellow 0 (Figure 2). This is further backed up by the fact that the FFT plot shows no unexpected harmonics
+
+\begin{figure}[htbp]
+\centering
+
+\includegraphics[scale=0.4]{AM1_Spectrum_Labeled.png}
+\caption{AM Spectrum of square modulated signal (excluding mirror frequencies)}
+
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+
+\includegraphics[scale=0.4]{AM1_no_distrourtion.png}
+\caption{AM and modulation signal showing no distortion}
+
+\end{figure}
+
+\newpage
+
 \subsection*{Triangular Wave}
+The parameters of the modulation signal were adjusted according to the lab script to approximate a triangle wave. The same approach as the one used for the square wave was used to calculate $PEP$ and $PAPR$. \\
+
+\noindent
+
 \begin{itemize}
-    \item \gls{pep}: 369.6mW
-    \item \gls{papr}: 8.14
+    \item ${PEP}$: 369.6 mW
+    \item ${PAPR}$: 8.14
 \end{itemize}
+
+\noindent The same powers as for the square wave (in mW) were observed on the AM spectrum plot: $14.4000$, $3.6000$, $0.3992$, $0.1440$ for $f_c$, $f_{m1}$, $f_{m2}$, $f_{m3}$ respectively (Figure 3). The side bands account for 28.47\% of the power. \\
+
+\noindent No cross over distortion was observed in this modulation either. When inspected the modulated signal appears to be smooth with no apparent distortion and no unexpected harmonics in the FFT plot (Figure 5).
+
+\begin{figure}[htbp]
+\centering
+
+\includegraphics[scale=0.3]{AM1_Tri_FFT.png}
+\caption{AM Spectrum triangle modulated signal (excluding mirror frequencies)}
+
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+
+\includegraphics[scale=0.3]{AM1_Tri_FullAM.png}
+\caption{AM and modulation signal (triangle)}
+
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.3]{AM1_Tri_ZoomedIn.png}
+\caption{AM and modulated signal showing no distortion}
+
+\end{figure}
+
 
 \section{Demodulation/detection}
 
 \subsection{AM detection}
+The "AM\_RX\_1.m" was configured according to the modulation table provided in the lab script. Observing the waveform it can be seen that they follow the input modulation very well. There is no noticeable distortion, or clipping or over modulation. The $o_S$ signal has a significantly higher amplitude due to have been multi9plied by the carrier during modulation (Figure 6). All signals are in phase.
+
+\begin{figure}[htbp]
+\centering
+
+\includegraphics[scale=0.4]{AM_RX_1_outputs.png}
+\caption{RX outputs comparison}
+
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+
+\includegraphics[scale=0.4]{AM_RX_1_First_filter_comp.png}
+\caption{AM and rectified waveform}
+
+\end{figure}
+
+\newpage
+
+\noindent The waveform parameters were then changed to modulate using a triangle wave approximation. Almost identical behaviour is observed with no distortion or clipping or phase shifts. However there is one key difference - the effects of rectification are clearly seen on the $o_R$ signal. We can see the negative components being mirrored into the positive half (Figure 8).
+
+\begin{figure}[htbp]
+\centering
+
+\includegraphics[scale=0.2]{AM_RX_1_outputs_Trinagle.png}
+\caption{RX output comparison for triangle modulation}
+
+\end{figure}
+
+\newpage
+
+
 
 \subsection*{Phase offset in receiver carrier}
 

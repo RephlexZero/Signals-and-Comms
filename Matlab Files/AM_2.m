@@ -22,28 +22,28 @@ modulation=zeros(1,N,'double');
 AM_time=zeros(1,N,'double');
 % carrier data
 carrier_freq=600;
-ic=carrier_freq/df
+ic=carrier_freq/df;
 carrier_w=2.0*pi*carrier_freq;
 carrier_phase=0.0;
-Ec=1.9;
+Ec=2.4;
 % modulation data
 modulation_freq=45;
-ima=modulation_freq/df
+ima=modulation_freq/df;
 modulation_w=2.0*pi*modulation_freq;
-modulation_phase=pi/2.0  %8.0*pi/16.0;
+modulation_phase=pi/2.0;  %8.0*pi/16.0;
 Em=0.333;
 E0=1.00;
 % 2nd modulation data
 modulation_freq2=15;
-imb=modulation_freq2/df
+imb=modulation_freq2/df;
 modulation_w2=2.0*pi*modulation_freq2;
-modulation_phase2=pi/2.0  %8.0*pi/16.0;
+modulation_phase2=pi/2.0 ; %8.0*pi/16.0;
 Em2=1.0;
 % 3rd modulation data
 modulation_freq3=75;
-imc=modulation_freq3/df
+imc=modulation_freq3/df;
 modulation_w3=2.0*pi*modulation_freq3;
-modulation_phase3=pi/2.0  %8.0*pi/16.0;
+modulation_phase3=pi/2.0;  %8.0*pi/16.0;
 Em3=0.2;
 Conv_Loss=1.0;
 % form the signals as a function of time

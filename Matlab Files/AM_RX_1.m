@@ -28,24 +28,24 @@ Ec=2.4;
 RXcarrier=zeros(1,N,'double');
 RXcarrier_freq=600.0;
 RXcarrier_w=2.0*pi*RXcarrier_freq;
-RXcarrier_phase=4*pi/4;
+RXcarrier_phase=0;
 EcRX=2.0;
 
 E0=1.0; % DC offset
 % 1st modulation data
 modulation_freq=45;
 modulation_w=2.0*pi*modulation_freq;
-modulation_phase=0.0;
+modulation_phase=0;
 Em=0.333;
 % 2nd modulation data
 modulation_freq2=15;
 modulation_w2=2.0*pi*modulation_freq2;
-modulation_phase2=0.0;
+modulation_phase2=0;
 Em2=1.0;
 % 3rd modulation data
 modulation_freq3=75;
 modulation_w3=2.0*pi*modulation_freq3;
-modulation_phase3=0.0;
+modulation_phase3=0;
 Em3=0.2;
 Conv_Loss=1.0;
 % form the signals as a function of time
