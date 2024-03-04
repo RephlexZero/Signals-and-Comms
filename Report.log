@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.2.29)  29 FEB 2024 15:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.2.29)  29 FEB 2024 16:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -672,60 +672,53 @@ Package caption Info: New subtype `subfigure' on input line 239.
 \c@subfigure=\count345
 Package caption Info: New subtype `subtable' on input line 239.
 \c@subtable=\count346
-) (/usr/share/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen294
-\WF@size=\dimen295
-\c@WF@wrappedlines=\count347
-\WF@box=\box94
-\WF@everypar=\toks51
-Package: wrapfig 2003/01/31  v 3.6
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 23.
+Package hyperref Info: Option `colorlinks' set `true' on input line 22.
  (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count348
-\l__pdf_internal_box=\box95
+\l__color_backend_stack_int=\count347
+\l__pdf_internal_box=\box94
 ) (./Report.aux)
 \openout1 = `Report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count349
-\scratchdimen=\dimen296
-\scratchbox=\box96
-\nofMPsegments=\count350
-\nofMParguments=\count351
-\everyMPshowfont=\toks52
-\MPscratchCnt=\count352
-\MPscratchDim=\dimen297
-\MPnumerator=\count353
-\makeMPintoPDFobject=\count354
-\everyMPtoPDFconversion=\toks53
+\scratchcounter=\count348
+\scratchdimen=\dimen294
+\scratchbox=\box95
+\nofMPsegments=\count349
+\nofMParguments=\count350
+\everyMPshowfont=\toks51
+\MPscratchCnt=\count351
+\MPscratchDim=\dimen295
+\MPnumerator=\count352
+\makeMPintoPDFobject=\count353
+\everyMPtoPDFconversion=\toks52
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 59.
+Package hyperref Info: Link coloring ON on input line 58.
  (./Report.out) (./Report.out)
 \@outlinefile=\write4
 \openout4 = `Report.out'.
@@ -752,29 +745,29 @@ Package hyperref Info: Link coloring ON on input line 59.
 * \headsep=25.0pt
 * \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=57.0pt
-* \marginparsep=11.0pt
+* \marginparwidth=4.0pt
+* \marginparsep=10.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
-* \@twocolumnfalse
+* \@twocolumntrue
 * \@twosidefalse
 * \@mparswitchfalse
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count355
+\c@lstlisting=\count354
 Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 <university_logo.png, id=43, 687.56876pt x 230.8625pt>
 File: university_logo.png Graphic file (type png)
 <use university_logo.png>
-Package pdftex.def Info: university_logo.png  used on input line 83.
+Package pdftex.def Info: university_logo.png  used on input line 82.
 (pdftex.def)             Requested size: 241.84843pt x 81.20467pt.
 [1
+
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./university_logo.png>] (./Report.toc
 LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
@@ -784,110 +777,150 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+)
+Underfull \hbox (badness 1281) in paragraph at lines 6--6
+ [] [][][]\OT1/cmr/bx/n/10 Orthogonal Fre-quency Di-vi-sion Mul-ti- 
+ []
+
+)
 \tf@toc=\write5
 \openout5 = `Report.toc'.
 
+ (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 103.
+<Images/AM_RX_1/Square Wave/AM Spectrum.jpg, id=67, 572.1375pt x 451.6875pt>
+File: Images/AM_RX_1/Square Wave/AM Spectrum.jpg Graphic file (type jpg)
+<use Images/AM_RX_1/Square Wave/AM Spectrum.jpg>
+Package pdftex.def Info: Images/AM_RX_1/Square Wave/AM Spectrum.jpg  used on input line 134.
+(pdftex.def)             Requested size: 217.66211pt x 171.836pt.
+<Images/AM_RX_1/Square Wave/No Distortion.png, id=68, 838.63312pt x 581.17125pt>
+File: Images/AM_RX_1/Square Wave/No Distortion.png Graphic file (type png)
+<use Images/AM_RX_1/Square Wave/No Distortion.png>
+Package pdftex.def Info: Images/AM_RX_1/Square Wave/No Distortion.png  used on input line 141.
+(pdftex.def)             Requested size: 217.66211pt x 150.83492pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.97         \newpage
-                      [1] (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2023/02/27 1.9 listings language file
-)
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 109.
+l.149 
+       [1
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--126
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 121--126
-
- []
-
-<Images/AM_RX_1/Square Wave/AM Spectrum.jpg, id=74, 572.1375pt x 451.6875pt>
-File: Images/AM_RX_1/Square Wave/AM Spectrum.jpg Graphic file (type jpg)
-<use Images/AM_RX_1/Square Wave/AM Spectrum.jpg>
-Package pdftex.def Info: Images/AM_RX_1/Square Wave/AM Spectrum.jpg  used on input line 152.
-(pdftex.def)             Requested size: 241.84843pt x 190.93425pt.
-<Images/AM_RX_1/Square Wave/No Distortion.png, id=75, 838.63312pt x 581.17125pt>
-File: Images/AM_RX_1/Square Wave/No Distortion.png Graphic file (type png)
-<use Images/AM_RX_1/Square Wave/No Distortion.png>
-Package pdftex.def Info: Images/AM_RX_1/Square Wave/No Distortion.png  used on input line 160.
-(pdftex.def)             Requested size: 241.84843pt x 167.59534pt.
-[2] [3 <./Images/AM_RX_1/Square Wave/AM Spectrum.jpg> <./Images/AM_RX_1/Square Wave/No Distortion.png (PNG copy)>]
-<Images/AM_RX_1/Triangular Wave/AM Spectrum.jpg, id=108, 572.1375pt x 451.6875pt>
+ <./Images/AM_RX_1/Square Wave/AM Spectrum.jpg> <./Images/AM_RX_1/Square Wave/No Distortion.png (PNG copy)>]
+<Images/AM_RX_1/Triangular Wave/AM Spectrum.jpg, id=102, 572.1375pt x 451.6875pt>
 File: Images/AM_RX_1/Triangular Wave/AM Spectrum.jpg Graphic file (type jpg)
 <use Images/AM_RX_1/Triangular Wave/AM Spectrum.jpg>
-Package pdftex.def Info: Images/AM_RX_1/Triangular Wave/AM Spectrum.jpg  used on input line 184.
-(pdftex.def)             Requested size: 241.84843pt x 190.93425pt.
-<Images/AM_RX_1/Triangular Wave/Full AM.png, id=109, 1151.05031pt x 712.91344pt>
+Package pdftex.def Info: Images/AM_RX_1/Triangular Wave/AM Spectrum.jpg  used on input line 163.
+(pdftex.def)             Requested size: 217.66211pt x 171.836pt.
+<Images/AM_RX_1/Triangular Wave/Full AM.png, id=103, 1151.05031pt x 712.91344pt>
 File: Images/AM_RX_1/Triangular Wave/Full AM.png Graphic file (type png)
 <use Images/AM_RX_1/Triangular Wave/Full AM.png>
-Package pdftex.def Info: Images/AM_RX_1/Triangular Wave/Full AM.png  used on input line 192.
-(pdftex.def)             Requested size: 241.84843pt x 149.78151pt.
-<Images/AM_RX_1/Triangular Wave/Zoomed.png, id=110, 1151.05031pt x 712.91344pt>
+Package pdftex.def Info: Images/AM_RX_1/Triangular Wave/Full AM.png  used on input line 170.
+(pdftex.def)             Requested size: 217.66211pt x 134.80226pt.
+<Images/AM_RX_1/Triangular Wave/Zoomed.png, id=105, 1151.05031pt x 712.91344pt>
 File: Images/AM_RX_1/Triangular Wave/Zoomed.png Graphic file (type png)
 <use Images/AM_RX_1/Triangular Wave/Zoomed.png>
-Package pdftex.def Info: Images/AM_RX_1/Triangular Wave/Zoomed.png  used on input line 199.
+Package pdftex.def Info: Images/AM_RX_1/Triangular Wave/Zoomed.png  used on input line 183.
 (pdftex.def)             Requested size: 241.84843pt x 149.78151pt.
-<Images/AM_RX_1/Square Wave/Output Waveforms.jpg, id=111, 572.1375pt x 451.6875pt>
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 183--184
+ [][] 
+ []
+
+<Images/AM_RX_1/Square Wave/Output Waveforms.jpg, id=106, 572.1375pt x 451.6875pt>
 File: Images/AM_RX_1/Square Wave/Output Waveforms.jpg Graphic file (type jpg)
 <use Images/AM_RX_1/Square Wave/Output Waveforms.jpg>
-Package pdftex.def Info: Images/AM_RX_1/Square Wave/Output Waveforms.jpg  used on input line 213.
+Package pdftex.def Info: Images/AM_RX_1/Square Wave/Output Waveforms.jpg  used on input line 197.
 (pdftex.def)             Requested size: 241.84843pt x 190.93425pt.
-<Images/AM_RX_1/Square Wave/AM and Rectified Waveforms.jpg, id=112, 572.1375pt x 451.6875pt>
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 197--198
+ [][] 
+ []
+
+<Images/AM_RX_1/Square Wave/AM and Rectified Waveforms.jpg, id=107, 572.1375pt x 451.6875pt>
 File: Images/AM_RX_1/Square Wave/AM and Rectified Waveforms.jpg Graphic file (type jpg)
 <use Images/AM_RX_1/Square Wave/AM and Rectified Waveforms.jpg>
-Package pdftex.def Info: Images/AM_RX_1/Square Wave/AM and Rectified Waveforms.jpg  used on input line 221.
+Package pdftex.def Info: Images/AM_RX_1/Square Wave/AM and Rectified Waveforms.jpg  used on input line 205.
 (pdftex.def)             Requested size: 241.84843pt x 190.93425pt.
- [4 <./Images/AM_RX_1/Triangular Wave/AM Spectrum.jpg> <./Images/AM_RX_1/Triangular Wave/Full AM.png (PNG copy)>] [5 <./Images/AM_RX_1/Triangular Wave/Zoomed.png (PNG copy)> <./Images/AM_RX_1/Square Wave/Output Waveforms.jpg> <./Images/AM_RX_1/Square Wave/AM and Rectified Waveforms.jpg>]
-<Images/AM_RX_1/Triangular Wave/Output Waveforms.jpg, id=127, 572.1375pt x 451.6875pt>
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 205--206
+ [][] 
+ []
+
+[2 <./Images/AM_RX_1/Triangular Wave/AM Spectrum.jpg> <./Images/AM_RX_1/Triangular Wave/Full AM.png (PNG copy)> <./Images/AM_RX_1/Triangular Wave/Zoomed.png (PNG copy)> <./Images/AM_RX_1/Square Wave/Output Waveforms.jpg>]
+<Images/AM_RX_1/Triangular Wave/Output Waveforms.jpg, id=116, 572.1375pt x 451.6875pt>
 File: Images/AM_RX_1/Triangular Wave/Output Waveforms.jpg Graphic file (type jpg)
 <use Images/AM_RX_1/Triangular Wave/Output Waveforms.jpg>
-Package pdftex.def Info: Images/AM_RX_1/Triangular Wave/Output Waveforms.jpg  used on input line 233.
+Package pdftex.def Info: Images/AM_RX_1/Triangular Wave/Output Waveforms.jpg  used on input line 217.
 (pdftex.def)             Requested size: 241.84843pt x 190.93425pt.
- [6 <./Images/AM_RX_1/Triangular Wave/Output Waveforms.jpg>]
-<Images/AM_RX_1/Triangular Wave/Receiver Carrier Phase Offset/Output Waveforms + 4pi 4.jpg, id=134, 572.1375pt x 451.6875pt>
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 217--218
+ [][] 
+ []
+
+<Images/AM_RX_1/Triangular Wave/Receiver Carrier Phase Offset/Output Waveforms + 4pi 4.jpg, id=117, 572.1375pt x 451.6875pt>
 File: Images/AM_RX_1/Triangular Wave/Receiver Carrier Phase Offset/Output Waveforms + 4pi 4.jpg Graphic file (type jpg)
 <use Images/AM_RX_1/Triangular Wave/Receiver Carrier Phase Offset/Output Waveforms + 4pi 4.jpg>
-Package pdftex.def Info: Images/AM_RX_1/Triangular Wave/Receiver Carrier Phase Offset/Output Waveforms + 4pi 4.jpg  used on input line 249.
+Package pdftex.def Info: Images/AM_RX_1/Triangular Wave/Receiver Carrier Phase Offset/Output Waveforms + 4pi 4.jpg  used on input line 232.
 (pdftex.def)             Requested size: 241.84843pt x 190.93425pt.
-<Images/AM_RX_1/Square Wave/Receiver Carrier Frequency Offset/Output Waveforms.jpg, id=135, 572.1375pt x 451.6875pt>
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 232--233
+ [][] 
+ []
+
+<Images/AM_RX_1/Square Wave/Receiver Carrier Frequency Offset/Output Waveforms.jpg, id=118, 572.1375pt x 451.6875pt>
 File: Images/AM_RX_1/Square Wave/Receiver Carrier Frequency Offset/Output Waveforms.jpg Graphic file (type jpg)
 <use Images/AM_RX_1/Square Wave/Receiver Carrier Frequency Offset/Output Waveforms.jpg>
-Package pdftex.def Info: Images/AM_RX_1/Square Wave/Receiver Carrier Frequency Offset/Output Waveforms.jpg  used on input line 263.
+Package pdftex.def Info: Images/AM_RX_1/Square Wave/Receiver Carrier Frequency Offset/Output Waveforms.jpg  used on input line 246.
 (pdftex.def)             Requested size: 241.84843pt x 190.93425pt.
- [7 <./Images/AM_RX_1/Triangular Wave/Receiver Carrier Phase Offset/Output Waveforms + 4pi 4.jpg> <./Images/AM_RX_1/Square Wave/Receiver Carrier Frequency Offset/Output Waveforms.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 288--298
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 246--247
+ [][] 
+ []
+
+
+Underfull \hbox (badness 1769) in paragraph at lines 252--252
+[]\OT1/cmr/bx/n/14.4 Orthogonal Fre-quency Di-vi-
+ []
+
+[3 <./Images/AM_RX_1/Square Wave/AM and Rectified Waveforms.jpg> <./Images/AM_RX_1/Triangular Wave/Output Waveforms.jpg> <./Images/AM_RX_1/Triangular Wave/Receiver Carrier Phase Offset/Output Waveforms + 4pi 4.jpg>]
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 277.
+ (/usr/share/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 277.
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--281
 
  []
 
-[8] (./Report.aux)
+[4
+
+ <./Images/AM_RX_1/Square Wave/Receiver Carrier Frequency Offset/Output Waveforms.jpg>] (./Report.aux)
 Package rerunfilecheck Info: File `Report.out' has not changed.
-(rerunfilecheck)             Checksum: 1D9ECD7A4B19EAE437703D11E25E6F85;1359.
+(rerunfilecheck)             Checksum: 51BFC8E9ABF8227EC8DD9DDA594C816D;1345.
  ) 
 Here is how much of TeX's memory you used:
- 29966 strings out of 477985
- 551235 string characters out of 5840058
- 1945388 words of memory out of 5000000
- 49617 multiletter control sequences out of 15000+600000
- 517686 words of font info for 53 fonts, out of 8000000 for 9000
+ 29928 strings out of 477985
+ 550673 string characters out of 5840058
+ 1935388 words of memory out of 5000000
+ 49585 multiletter control sequences out of 15000+600000
+ 517985 words of font info for 54 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 94i,6n,131p,2299b,1777s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,8n,131p,2299b,1777s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{glo:papr} has been referenced but does not exist, replaced by a fixed one
 
 
 pdfTeX warning (dest): name{glo:pep} has been referenced but does not exist, replaced by a fixed one
 
- </home/jake/.texlive/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on Report.pdf (9 pages, 686528 bytes).
+ </home/jake/.texlive/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on Report.pdf (5 pages, 700230 bytes).
 PDF statistics:
- 223 PDF objects out of 1000 (max. 8388607)
- 171 compressed objects within 2 object streams
- 46 named destinations out of 1000 (max. 500000)
+ 210 PDF objects out of 1000 (max. 8388607)
+ 160 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 500000)
  140 words of extra memory for PDF output out of 10000 (max. 10000000)
 
